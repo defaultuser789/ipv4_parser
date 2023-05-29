@@ -12,9 +12,8 @@
     
 ## 在其他 python 代码中引用
 
-
-import ipv4_parser
-ips = "192.168.1.1,192.168.10.1/30,192.168.20.10-11,192.168.30.1-192.168.30.10,192.168.40.8/255.255.255.248"
-ip_list = ipv4_parser.ipv4_parser(ips)
-for ip in ip_list:
-    print(ip)
+    import ipv4_parser
+    ips = "192.168.1.1,192.168.10.1/30,192.168.20.10-11,192.168.30.1-192.168.30.10,192.168.40.8/255.255.255.248"
+    ip_list = ipv4_parser.ipv4_parser(ips)
+    for ip in ip_list:
+        print(ip)
